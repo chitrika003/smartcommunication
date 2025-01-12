@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+  /* background-image: url('https://www.soojidaara.in/cdn/shop/articles/handloom.jpg'); */
+  background-size: cover;
+  background-position: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cart-menu {
+    width: 100%;
+  }
+  
+  .products-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 1rem;
+  }
+} 
